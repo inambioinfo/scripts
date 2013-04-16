@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+                        ['Sample', 'SNPs'],
+                        ['Not Expressed',       223],
+                        ['Expression Too Low ',         162],
+                        ['Illumina Only',       43],
+                        ['Solid Only',    3],
+                        ['Low Confidence Expressed',    30 ],
+                        ['Illumina and SOLiD',  31]
+                        ]);
+
+        var options = {title: 'All Samples Median'
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('chart_median'));
+        chart.draw(data, options);
+}
+</script>
+</head>
+
+<body>
+<table>
+        <tr>
+                 <td >
+                <div id="chart_median" style="width:500px; height: 350px;"></div>
+                </td>
+        </tr>
+</table>
+</body>
+</html>
+
