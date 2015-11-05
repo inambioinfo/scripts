@@ -1,4 +1,8 @@
 #!/bin/sh
+#Parse output of VCFComparator (USeq) to table format
+#http://useq.sourceforge.net/cmdLnMenus.html#VCFComparator
+#sh  ~/bin/VCFComparator2table.sh */*.xls
+
 echo -e "Key VCF\tTest VCF\tInterrogated bps in key\tInterrogated bps in test\tInterrogated bps in common\tKey variants\tKey variants in shared regions\tTest variants\tTest variants in shared regions\tNumMatchTest\tNumNonMatchTest\tFDR=nonMatchTest/(matchTest+nonMatchTest)\tdecreasingFDR\tTPR=matchTest/totalKey\tFPR=nonMatchTest/totalKey\tPPV=matchTest/(matchTest+nonMatchTest)"
 for i in $@
         do
