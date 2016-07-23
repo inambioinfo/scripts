@@ -4,7 +4,7 @@ GitHub uses "GitHub Flavored Markdown," or GFM, across the site--in issues, comm
 If you're not already familiar with Markdown, take a look at Markdown Basics. If you'd like to know more about features that are available in issues, comments, and pull request descriptions, such as task lists, read Writing on GitHub.
 
 Differences from traditional Markdown
-
+--
 Multiple underscores in words
 
 Where Markdown transforms underscores (_) into italics, GFM ignores underscores in words, like this:
